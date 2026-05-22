@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для Сони ♡</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Падающие лепестки сакуры -->
+    <div class="petals-container" id="petalsContainer"></div>
+
+    <!-- ЭКРАН 1: ЗАМОК С КОДОМ -->
+    <div id="lockScreen" class="screen active">
+        <div class="lock-container">
+            <div class="lock-wrapper" id="lockWrapper">
+                <div class="lock-body">
+                    <div class="lock-shackle"></div>
+                    <div class="lock-base">
+                        <div class="keyhole"></div>
+                    </div>
+                </div>
+                <div class="code-display" id="codeDisplay">0000</div>
+            </div>
+            
+            <div class="numpad">
+                <div class="numpad-row">
+                    <button class="num-btn" data-num="1">1</button>
+                    <button class="num-btn" data-num="2">2</button>
+                    <button class="num-btn" data-num="3">3</button>
+                </div>
+                <div class="numpad-row">
+                    <button class="num-btn" data-num="4">4</button>
+                    <button class="num-btn" data-num="5">5</button>
+                    <button class="num-btn" data-num="6">6</button>
+                </div>
+                <div class="numpad-row">
+                    <button class="num-btn" data-num="7">7</button>
+                    <button class="num-btn" data-num="8">8</button>
+                    <button class="num-btn" data-num="9">9</button>
+                </div>
+                <div class="numpad-row">
+                    <button class="num-btn clear-btn" data-num="clear">⌫</button>
+                    <button class="num-btn" data-num="0">0</button>
+                    <button class="num-btn enter-btn" data-num="enter">↵</button>
+                </div>
+            </div>
+            <p class="hint-text">Введи дату, которая открыла наши сердца...</p>
+        </div>
+    </div>
+
+    <!-- ЭКРАН 2: СЕРДЦЕ -->
+    <div id="heartScreen" class="screen">
+        <div class="heart-container" id="heartContainer">
+            <div class="big-heart" id="bigHeart">♡</div>
+            <p class="click-heart-text">Нажми на сердечко, Соня</p>
+        </div>
+    </div>
+
+    <!-- ЭКРАН 3: ПИСЬМО И ФОТО -->
+    <div id="letterScreen" class="screen">
+        <div class="letter-wrapper">
+            <div class="photo-frame">
+                <img src="img/123321.jpg" alt="" class="our-photo" id="ourPhoto">
+                <div class="photo-placeholder" id="photoPlaceholder">
+                    <span class="placeholder-icon"></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div class="letter-paper">
+                <div class="letter-content">
+                    <p class="greeting">Моя любимая Соня,</p>
+                    <p class="text">
+                        Я хочу сказать тебе то, что чувствую каждый день, но, наверное, говорю недостаточно часто. 
+                        Ты — самое лучшее, что случилось со мной в этой жизни.
+                    </p>
+                    <p class="text">
+                        Когда я вижу твою улыбку, мир вокруг становится светлее. Твой смех — это моя любимая мелодия, 
+                        а твои глаза — то, в чём я готов тонуть бесконечно. Рядом с тобой я чувствую себя по-настоящему 
+                        счастливым, спокойным и нужным.
+                    </p>
+                    <p class="text">
+                        Я люблю в тебе всё: твою доброту, твою заботу, твоё умение сделать даже самый обычный день 
+                        особенным. Ты вдохновляешь меня становиться лучше, и я бесконечно благодарен судьбе за то, 
+                        что мы встретились.
+                    </p>
+                    <p class="text">
+                        Я обещаю беречь тебя, заботиться о тебе и делать всё, чтобы ты улыбалась как можно чаще. 
+                        Обещаю быть рядом и в радости, и в трудные минуты. Ты — мой самый дорогой человек, 
+                        и я хочу, чтобы ты всегда это знала.
+                    </p>
+                    <p class="text">
+                        Спасибо тебе за то, что ты есть. За то, что ты именно такая, какая ты есть. 
+                        За каждое мгновение, проведённое вместе. Я люблю тебя больше, чем могут передать слова.
+                    </p>
+                    <p class="closing">
+                        Навсегда твой Коля<br>
+                        <span class="signature">С любовью навсегда</span>
+                    </p>
+                </div>
+            </div>
+            
+            <button class="back-btn" id="backToHeartBtn">← Вернуться к сердечку</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
